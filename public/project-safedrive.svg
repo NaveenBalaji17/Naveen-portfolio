@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="url(#bgGrad)"/>
+  <!-- Car icon -->
+  <rect x="130" y="90" width="80" height="35" rx="8" fill="#14b8a6"/>
+  <rect x="145" y="75" width="50" height="20" rx="5" fill="#14b8a6"/>
+  <!-- Wheels -->
+  <circle cx="155" cy="130" r="12" fill="#334155"/>
+  <circle cx="155" cy="130" r="6" fill="#64748b"/>
+  <circle cx="195" cy="130" r="12" fill="#334155"/>
+  <circle cx="195" cy="130" r="6" fill="#64748b"/>
+  <!-- Signal waves -->
+  <path d="M230 85 Q240 80 250 85" stroke="#f59e0b" stroke-width="3" fill="none"/>
+  <path d="M225 75 Q245 65 265 75" stroke="#f59e0b" stroke-width="3" fill="none"/>
+  <path d="M220 65 Q250 50 280 65" stroke="#f59e0b" stroke-width="3" fill="none"/>
+  <!-- Title -->
+  <text x="200" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f1f5f9">Safe Drive - IoT Project</text>
+</svg>

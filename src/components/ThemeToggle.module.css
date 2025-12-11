@@ -1,0 +1,78 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.toggle:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.toggle:hover .icon {
+  color: var(--text-inverse);
+}
+
+.toggle:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.iconWrapper {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  color: var(--text-secondary);
+  transition: all var(--transition-base);
+}
+
+.sunIcon {
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+}
+
+.sunIcon.hidden {
+  transform: rotate(90deg) scale(0);
+  opacity: 0;
+}
+
+.moonIcon {
+  transform: rotate(-90deg) scale(0);
+  opacity: 0;
+}
+
+.moonIcon.hidden {
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+}
+
+/* Fix for dark mode - invert hidden state logic */
+[data-theme="dark"] .moonIcon {
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+}
+
+[data-theme="dark"] .moonIcon.hidden {
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+}
+
+[data-theme="dark"] .sunIcon.hidden {
+  transform: rotate(90deg) scale(0);
+  opacity: 0;
+}
